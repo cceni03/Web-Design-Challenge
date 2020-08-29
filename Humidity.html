@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Landing Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Dropdown Created-->
+    <nav class="navbar">
+        <div class="container">
+            <header class ="header">
+                <div class="navigation">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-medium">
+                        <a class="navbar-brand" style="background-color: #008080;" href="index.html">Latitude</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            </header>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>            
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="WindSpeed.html"> Wind Speed</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="Comparison.html">Comparison</a>
+                </li>
+                <li>
+                    <a href="Data.html">Data</a>
+                </li>
+              </ul>
+          </div>
+      </nav>
+      <br><br>
+      <!--Columns-->
+      <!--Rows-->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section id="landing_page">
+                 <section id="figure">
+                     <h2 id="landing">Humidity<br><br></h2>
+                     <img id="latitude_image" src="Resources/Assets/Images/Fig2.png" alt="Your Name">
+                 </section>
+                 <p>From the analysis conducted, we can conclude that the farther away from the equator a city is the higher the humidity. </p>
+                <p>While many cities are miles away from each other, our analysis shows that no matter where a person is located, humidity can be
+                    higher in countries with similar temperatures regardless of where they are located.</p>
+                </section>
+            </div>
+          <div class="col-md-4">
+              <section id="Comparison_Images">
+                  <section id="images">
+                      <h2>Visualizations</h2>
+                      <div class="row">
+                      <div class="col-md-6">
+                          <img src="Resources/Assets/Images/Fig1.png" alt="Latitude vs Temperature" style="width:100%" onclick="location.href='Temperature'">                   
+                      </div>
+                      <div class="col-md-6">
+                          <img src="Resources/Assets/Images/Fig2.png" alt="Latitude vs Humidity" style="width:100%" onclick="location.href='Humidity.html'">
+                      </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="Resources/Assets/Images/Fig3.png" alt="Latitude vs Cloudiness" style="width:100%" onclick="location.href='Cloudiness.html'">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Resources/Assets/Images/Fig4.png" alt="Latitude vs Wind Speed" style="width:100%" onclick="location.href='WindSpeed.html'">
+                    </div>
+                    </div>
+                  </section>
+              </section>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
